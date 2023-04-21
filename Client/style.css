@@ -1,15 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+body{
+  font-family: 'Lora', serif;
+}
 .card{
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 30%;
 }
 .card input{
   width: 90%;
   display: block;
-  /* border: none; */
+  border: none;
   margin: 4% auto;
+  height: 30px;
+  font-size: 1.05rem;
+}
+.card input:focus{
+  outline: none;
 }
 .card button{
   margin: 4%;
+  width: 30%;
+  height: 30px;
+  background-color: blue;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+.card button:hover{
+  opacity: 0.3;
 }
 .note-list{
   width: 90%;
@@ -19,7 +42,9 @@
   gap: 4%;
 }
 .note{
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
   width: 200px;
   text-align: center;
   padding: 10px;
@@ -40,4 +65,9 @@
   cursor: pointer;
   margin: 0%;
   padding: 0;
+  color: rgba(128, 128, 128, 0.523);
+  transition: 0.3s ease all;
+}
+.icon button:hover{
+  color: rgba(0, 0, 0, 0.747);
 }

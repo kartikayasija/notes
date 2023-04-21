@@ -13,9 +13,11 @@ mongoose.connect(process.env.MONGODB).catch((err)=>{
 })
 app.use(cors());
 app.use("/notes",notes.router);
+
 app.get("/",(req,res)=>{
-  res.send("hello world");
+  res.send("Server Started!");
 })
+
 app.listen(process.env.PORT || 3000,()=>{
   console.log("started");
 })

@@ -1,7 +1,7 @@
 const refresh = () => {
   document.querySelector("#addButton").innerHTML = "Add";
 
-  fetch("http://localhost:3000/notes", {
+  fetch("https://notes-keeper-pi.vercel.app/notes", {
     method: "GET",
   })
     .then((response) => response.json())
@@ -45,7 +45,7 @@ const getValue = () => {
   const content = document.querySelector("#content").value;
 
   if (!update) {
-    fetch("http://localhost:3000/notes", {
+    fetch("https://notes-keeper-pi.vercel.app/notes", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -64,7 +64,7 @@ const getValue = () => {
   } 
   
   else {
-    fetch(`http://localhost:3000/notes/${updateID}`, {
+    fetch(`https://notes-keeper-pi.vercel.app/notes/${updateID}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -87,7 +87,7 @@ const getValue = () => {
 
 const deleteNote = (id) => {
   console.log(id);
-  fetch(`http://localhost:3000/notes/${id}`, {
+  fetch(`https://notes-keeper-pi.vercel.app/notes/${id}`, {
     method: "DELETE",
   })
     .then((response) => response.json())
