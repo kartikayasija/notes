@@ -1,0 +1,43 @@
+.card{
+  text-align: center;
+  border: 1px solid black;
+}
+.card input{
+  width: 90%;
+  display: block;
+  /* border: none; */
+  margin: 4% auto;
+}
+.card button{
+  margin: 4%;
+}
+.note-list{
+  width: 90%;
+  margin: 3% auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+.note{
+  border: 1px solid black;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  margin: 2% auto;
+}
+.note-content{
+  width: 100%;
+  margin: 4% auto;
+}
+.icon{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5%;
+}
+.icon button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0%;
+  padding: 0;
+}
